@@ -6,7 +6,13 @@
  * @author     Andreas Gohr <andi@splitbrain.org>
  * @author     Anika Henke <anika@selfthinker.org>
  * @author     Matthias Grimm <matthiasgrimm@users.sourceforge.net>
+ * @author     Friedel Voelker <fv@pluscode.de>
  */
+if ( PHP_OS == "WIN32" || PHP_OS == "WINNT" ) { 
+    setlocale( "LC_TIME", "English_Britain" ); // Windows 
+} else { 
+    setlocale( "LC_TIME", "en_UK" ); // Linux 
+}
 $lang['encoding']   = 'utf-8';
 $lang['direction']  = 'ltr';
 $lang['doublequoteopening']  = '“';//&ldquo;
