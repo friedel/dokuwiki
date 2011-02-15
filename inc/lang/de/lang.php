@@ -19,7 +19,13 @@
  * @author Robert Bogenschneider <robog@gmx.de>
  * @author Niels Lange <niels@boldencursief.nl>
  * @author Christian Wichmann <nospam@zone0.de>
+ * @author Friedel Voelker <fv@pluscode.de>
  */
+if ( PHP_OS == "WIN32" || PHP_OS == "WINNT" ) { 
+    setlocale( "LC_TIME", "German_Germany" ); // Windows 
+} else { 
+    setlocale( "LC_TIME", "de_DE" ); // Linux 
+}
 $lang['encoding']              = 'utf-8';
 $lang['direction']             = 'ltr';
 $lang['doublequoteopening']    = '„';
