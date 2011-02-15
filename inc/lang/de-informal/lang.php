@@ -18,7 +18,13 @@
  * @author Marcel Metz <marcel_metz@gmx.de>
  * @author Matthias Schulte <post@lupo49.de>
  * @author Christian Wichmann <nospam@zone0.de>
+ * @author Friedel Voelker <fv@pluscode.de>
  */
+if ( PHP_OS == "WIN32" || PHP_OS == "WINNT" ) { 
+    setlocale( "LC_TIME", "German_Germany" ); // Windows 
+} else { 
+    setlocale( "LC_TIME", "de_DE" ); // Linux 
+}
 $lang['encoding']              = 'utf-8';
 $lang['direction']             = 'ltr';
 $lang['doublequoteopening']    = '„';
