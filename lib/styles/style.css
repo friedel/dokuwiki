@@ -123,3 +123,7 @@ em em.u {
 .code .st0  { color: #ff0000; }
 .code .sy0  { color: #66cc66; }
 
+/* prevent hopping link for secedit  */
+div.dokuwiki div.secedit input.button {
+  clear: both;
+}
